@@ -25,6 +25,10 @@ header h1 {
   margin: 2px;
 }
 
+#page-title {
+  text-align: center;
+}
+
 .body-content {
   background-color: #bcd9f5;
   display: flex;
@@ -33,6 +37,7 @@ header h1 {
   padding: 2vw;
   background-color: rgba(246, 255, 207, 0.905);
   justify-content: space-evenly;
+  height: 100%;
 }
 
 body {
@@ -40,23 +45,45 @@ body {
   margin: 0px;
 }
 
+h1 {
+  color: brown;
+}
+
 h2 {
-  text-align: center;
   margin-top: 70px;
   position: relative;
+  font-weight: 1500;
+  color: green;
 }
 
 h3 {
   text-align: center;
+  color: brown;
+  font-size: 22px;
+}
+
+p {
+  color: darkblue;
+  font-size: 18px;
 }
 
 .centimg {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   width: 70%;
   max-width: 470px;
+}
+
+.centimgmain {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
 }
 
 .headerinfo {
@@ -77,12 +104,19 @@ h3 {
   position: relative;
 }
 .nav .menu {
-  width: 85px;
-  height: 25px;
+  width: 95px;
+  height: 35px;
   margin: 5px;
   background: rgba(246, 255, 207, 0.905);
   border: solid black 2px;
   font-size: 18px;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+#menu-selected {
+  background-color: lightgreen;
 }
 
 .mob-social-media {
@@ -106,7 +140,7 @@ h3 {
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 749px) {
   .social-media {
     display: none;
   }
@@ -148,7 +182,7 @@ h3 {
 
   .nav {
     width: calc(100% - 320px);
-    border: solid 3px black;
+    border-bottom: solid 3px black;
   }
 
   .body-content {
@@ -201,9 +235,47 @@ h3 {
 .block {
   display: block;
   border: solid black 2px;
+  border-radius: 30px;
   max-width: 370px;
   padding: 25px;
   margin: 10px;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 20px;
+  border: solid #bcd9f5 1px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+input[type=submit] {
+  background-color: #4cb94c;
+  color: white;
+  padding: 12px 20px;
+  border: solid black 2px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
+input {
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

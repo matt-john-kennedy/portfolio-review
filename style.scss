@@ -34,6 +34,9 @@ header{
         margin: 2px;   
     }
 }
+#page-title{
+    text-align: center;
+}
 .body-content{
     @include header-footer();
     // align-items: center;
@@ -41,28 +44,52 @@ header{
     padding: 2vw;
     background-color: $tertiary-color;
     justify-content: space-evenly;
+    height: 100%
 }
 body{
     background-color: $tertiary-color;
     margin: 0px;
 }
+h1{
+    color: brown;
+}
 h2{
-    text-align: center;
+    // text-align: center;
     margin-top: 70px;
     position: relative;
+    font-weight: 1500;
+    color: green;
 }
 h3{
     text-align: center;
+    color: brown;
+    font-size: 22px;
 }
-
-.centimg{
+p{
+    color: darkblue;
+    font-size: 18px;
+}
+@mixin centdiv{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    max-width: 470px;
     margin-top: 50px;
 }
+.centimg{
+    @include centdiv();
+    width: 70%;
+    max-width: 470px;
+}
+.centimgmain{
+    @include centdiv();
+    width: 100%;
+    max-width: 600px;
+    border-radius: 30px;
+    // margin-left: 320px;
+    // align-items: center;
+}
+
+
 // My info displayed on each page - customised later for mobile and desktop
 .headerinfo{
     background-color: $secondary-color;
@@ -81,30 +108,27 @@ h3{
     justify-content: center;
     position: relative;
     .menu{
-        width: 85px;
-        height: 25px;
+        width: 95px;
+        height: 35px;
         margin: 5px;
         background: $tertiary-color;
         border: solid black 2px;
         font-size: 18px;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
     }
+}
+#menu-selected{
+    background-color: lightgreen;
 }
 // This displays contact details in mobile view
 .mob-social-media{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
     padding: 35px;
-    // min-height: calc(100% - 5px);
-    // bottom: 0;
     margin: 10px;
-    // min-height: 100%;
     width: 90%;
     img{
         width: 50px;
-        // position: relative;
-        // top: 50%;
-        // transform: translateY(-50%);
     }
 }
 .social-media{
@@ -118,7 +142,7 @@ h3{
         transform: translateY(-50%);
     }
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 749px){
     .social-media{
         display: none;
     }
@@ -129,11 +153,6 @@ h3{
         max-width: 133px;
     }
 }
-
-// @media screen and (min-width: 500px) and (max-width: 750px){
-//     #profpic
-// }
-
 @media screen and (min-width: 750px){
     .mob-social-media{
         display: none;
@@ -149,7 +168,6 @@ h3{
         flex-wrap: wrap;
         position: fixed;
         float: left; // THIS WAS WHAT MADE IT WORK
-        // flex-direction: column;
     }
     #page-title{
         margin-left: 320px;
@@ -160,7 +178,7 @@ h3{
     }
     .nav{
         width: calc(100% - 320px);
-        border: solid 3px black;
+        border-bottom: solid 3px black;
     }
     .body-content{
         width: calc(100% - 320px);
@@ -209,7 +227,45 @@ h3{
 .block{
     display: block;
     border: solid black 2px;
+    border-radius: 30px;
     max-width: 370px;
     padding: 25px;
     margin: 10px;
 }
+.contact{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 20px; 
+    border: solid $secondary-color 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    // resize: vertical
+  }
+  
+//   submit button style
+  input[type=submit] {
+    background-color: rgb(76, 185, 76);
+    color: white;
+    padding: 12px 20px;
+    border: solid black 2px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+//   Make the submit button change when hovering over it
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  label{
+      margin-bottom: 1em;
+  }
+  input{
+      margin-bottom: 1em;
+  }
+    
