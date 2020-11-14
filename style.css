@@ -197,6 +197,10 @@ p {
   h1 {
     padding-top: 30px;
   }
+
+  .to-top {
+    padding: 7px;
+  }
 }
 .to-top {
   border: solid black 2px;
