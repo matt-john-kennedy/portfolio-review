@@ -1,5 +1,5 @@
 # A link (URL) to your published portfolio website ****
-www.mysite.com
+https://brave-curie-ffa72d.netlify.app
 
 # My Github Repo
 
@@ -17,11 +17,36 @@ Images and content that scales, moves and appears or disappears depending on the
 
 ## Sitemap
 
-![Wireframe](/docs/sm.png "REERT")
+![Wireframe](./docs/sm.png)
 
 ## Screenshots
 
-![images](/docs/image.jpg)
+Mobile Wireframes
+![Mobile Wireframes](./docs/mobwire.png)
+
+Mobile View
+![Mobile View](./docs/mobv.jpg)
+
+Mobile View Contact
+![Mobile View Contact](./docs/mobv-contact.jpg)
+
+Tablet Wireframes
+![Tablet Wireframes](./docs/tabwire.png)
+
+Tablet View
+![Table View](./docs/tabv.jpg)
+
+Tablet View Contact
+![Tablet View Contact](./docs/tabv-cont.jpg)
+
+Mobile Wireframes
+![Mobile Wireframes](./docs/mobwire.png)
+
+Desktop View
+![Desktop View](./docs/deskv.jpg)
+
+Desktop View Contact
+![Desktop View Contact](./docs/deskv-cont.jpg)
 
 
 
@@ -32,6 +57,6 @@ This website has been created for the purpose of showcasing skills to potential 
 
 ## Tech stack 
 
-(e.g. html, css, deployment platform, etc) 
+The site was built in HTML and styled in SCSS which converted to CSS through the use of the Ubuntu terminal.
 
-SCSS, CSS & HTML, Github, Netlify
+The site was pushed to the Github repository and hosted on Netlify.
