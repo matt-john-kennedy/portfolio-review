@@ -1,9 +1,10 @@
+/* removing margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* sizing and positioning profile picture */
 #profpic {
   width: 25vw;
   margin: 6px;
@@ -11,7 +12,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* used in an alternate layout */
 header {
   background-color: #bcd9f5;
   display: flex;
@@ -19,16 +20,17 @@ header {
   flex-direction: row;
   align-items: center;
 }
+/* styling header main header */
 header h1 {
   color: brown;
   font-size: 25px;
   margin: 2px;
 }
-
+/* centering page titles */
 #page-title {
   text-align: center;
 }
-
+/* arranging content for the body of the site */
 .body-content {
   background-color: #bcd9f5;
   display: flex;
@@ -39,12 +41,12 @@ header h1 {
   justify-content: space-evenly;
   height: 100%;
 }
-
+/* styling body */
 body {
   background-color: rgba(246, 255, 207, 0.905);
   margin: 0px;
 }
-
+/* styling headers and text below */
 h1 {
   color: brown;
 }
@@ -66,7 +68,7 @@ p {
   color: darkblue;
   font-size: 18px;
 }
-
+/* styling images for blocks */
 .centimg {
   display: flex;
   margin-left: auto;
@@ -75,7 +77,7 @@ p {
   width: 90%;
   max-width: 470px;
 }
-
+/* styling for images outside of a div */
 .centimgmain {
   display: flex;
   margin-left: auto;
@@ -85,7 +87,7 @@ p {
   max-width: 600px;
   border-radius: 30px;
 }
-
+/* styling info about myself used on each page */
 .headerinfo {
   background-color: #bcd9f5;
   display: flex;
@@ -94,7 +96,7 @@ p {
   border-bottom: solid #045664 1px;
   position: relative;
 }
-
+/* styling navigation div */
 .nav {
   background: #99c8f5;
   display: flex;
@@ -103,6 +105,7 @@ p {
   justify-content: center;
   position: relative;
 }
+/* styling menu items */
 .nav .menu {
   width: 105px;
   height: 35px;
@@ -114,11 +117,11 @@ p {
   align-items: center;
   border-radius: 20px;
 }
-
+/* custom colour for selected page in menu */
 #menu-selected {
   background-color: lightgreen;
 }
-
+/* contact details for mobile site */
 .mob-social-media {
   padding: 35px;
   margin: 10px;
@@ -127,7 +130,7 @@ p {
 .mob-social-media img {
   width: 50px;
 }
-
+/* contact details for desktop and larger tablet sites */
 .social-media {
   display: flex;
   flex-direction: column;
@@ -139,7 +142,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* styling content for mobiles and smaller tablets */
 @media screen and (max-width: 749px) {
   .social-media {
     display: none;
@@ -153,6 +156,7 @@ p {
     max-width: 133px;
   }
 }
+/* styling content for larger tablets and desktop */
 @media screen and (min-width: 750px) {
   .mob-social-media {
     display: none;
@@ -202,6 +206,7 @@ p {
     padding: 7px;
   }
 }
+/* blog publish dates */
 .date-pub {
   text-align: left;
   font-family: serif;
@@ -209,7 +214,7 @@ p {
   color: darkgray;
   padding: 10px;
 }
-
+/* icon to take user to top of page */
 .to-top {
   background-color: #99c8f5;
   position: fixed;
@@ -217,7 +222,7 @@ p {
   right: 0;
   top: calc(95vh);
 }
-
+/* content inside header */
 .contact-info {
   display: flex;
   max-width: 80vw;
@@ -243,7 +248,7 @@ p {
   margin: 0px;
   max-width: 90vw;
 }
-
+/* divs inside main body */
 .block {
   display: block;
   border: solid black 2px;
@@ -262,7 +267,7 @@ p {
   background-color: #f2f2f2;
   padding: 30px;
 }
-
+/* contact form */
 input[type=text], select, textarea {
   width: 100%;
   padding: 20px;
