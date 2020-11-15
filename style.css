@@ -72,7 +72,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  width: 70%;
+  width: 90%;
   max-width: 470px;
 }
 
@@ -202,12 +202,20 @@ p {
     padding: 7px;
   }
 }
+.date-pub {
+  text-align: left;
+  font-family: serif;
+  font-weight: 2500;
+  color: darkgray;
+  padding: 10px;
+}
+
 .to-top {
-  border: solid black 2px;
   background-color: #99c8f5;
   position: fixed;
+  border-radius: 20px;
   right: 0;
-  top: calc(60vh);
+  top: calc(95vh);
 }
 
 .contact-info {
@@ -240,9 +248,13 @@ p {
   display: block;
   border: solid black 2px;
   border-radius: 30px;
-  max-width: 370px;
+  max-width: 500px;
   padding: 25px;
   margin: 10px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .contact {

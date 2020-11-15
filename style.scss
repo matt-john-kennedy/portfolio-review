@@ -77,7 +77,7 @@ p{
 }
 .centimg{
     @include centdiv();
-    width: 70%;
+    width: 90%;
     max-width: 470px;
 }
 .centimgmain{
@@ -194,15 +194,23 @@ p{
         padding: 7px;
     }
 }
+.date-pub{
+    text-align: left;
+    font-family: serif;
+    font-weight: 2500;
+    color: darkgray;
+    padding: 10px;
+}
 #top{}
 .to-top{
     // padding: 5px;
-    border: solid black 2px;
+    // border: solid black 2px;
     background-color: $primary-color;
     position: fixed;
+    border-radius: 20px;
     // z-index: 100;
     right: 0;
-    top: calc(60vh)
+    top: calc(95vh)
 }
 .contact-info{
     display: flex;
@@ -231,9 +239,13 @@ p{
     display: block;
     border: solid black 2px;
     border-radius: 30px;
-    max-width: 370px;
+    max-width: 500px;
     padding: 25px;
     margin: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 .contact{
     border-radius: 5px;
