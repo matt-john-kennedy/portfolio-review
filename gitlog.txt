@@ -1,0 +1,35 @@
+commit e215511adc1e4dae5fd78521b1b24ffe9d702119
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Sun Nov 15 16:28:28 2020 +1000
+
+    updated-nav-bar
+
+commit a3fd6a35c32b760be50131b2c53c9b625c8d6bb7
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Sun Nov 15 14:02:47 2020 +1000
+
+    almost complete
+
+commit 31f6de9e1e1cc0706ed81a4a7afa2e8dc3b601a2
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Sat Nov 14 14:31:23 2020 +1000
+
+    after pres
+
+commit 7230afc6c6ed205cb6f90408e3914a4fa7673252
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Fri Nov 13 10:06:48 2020 +1000
+
+    first upload
+
+commit cb690d49802992a7a5365b6f235930546a16f3ae
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Thu Nov 12 23:47:07 2020 +1000
+
+    template complete
+
+commit 4f3fd0df77c95a855db4cc0ae603b36c031b9496
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Wed Nov 4 15:28:05 2020 +1000
+
+    first commit

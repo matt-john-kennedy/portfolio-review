@@ -1,0 +1,275 @@
+$primary-color: rgb(153, 200, 245);
+$secondary-color: rgb(188, 217, 245);
+$tertiary-color: rgba(246, 255, 207, 0.905);
+
+// paint one border to all divs just for help in the design
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// div{
+//     border: solid black 5px;
+//     margin: 5px;
+//     padding: 5px;
+// }
+#profpic{
+    width: 25vw;
+    margin: 6px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin header-footer{
+    background-color: $secondary-color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    //width: 100vw;
+}
+
+body{
+    background-color: $tertiary-color;
+    margin: 0px;
+}
+h3{
+    text-align: center;
+}
+header{
+    @include header-footer();
+    align-items: center;
+    h1{
+        color: brown;
+        font-size: 25px;
+        margin: 2px;   
+    }
+}
+.centimg{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 470px;
+    margin-top: 50px;
+}
+.headerinfo{
+    background-color: $secondary-color;
+    // float: left;
+    // max-width: 50%;
+    // float: left;
+    // height: 70px;
+    display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    border-bottom: solid rgb(4, 86, 100) 1px;
+    position: relative;
+}
+.full-page{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav{
+    // width: 100%;
+    // padding: 10px;
+    // max-width: 300px;
+    background: $primary-color;
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    // align-items: center;
+    .menu{
+        width: 85px;
+        height: 25px;
+        margin: 5px;
+        background: $tertiary-color;
+        border: solid black 2px;
+        font-size: 18px;
+    }
+}
+.mob-social-media{
+    display: flex;
+    // display: none;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    img{
+        width: 50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.social-media{
+    display: flex;
+    // display: none;
+    justify-content: space-between;
+    img{
+        width: 50px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 750px){
+    .social-media{
+        display: none;
+    }
+    .nav{
+        width: 100%
+    }
+    #profpic{
+        max-width: 133px;
+    }
+}
+
+// @media screen and (min-width: 500px) and (max-width: 750px){
+//     #profpic
+// }
+
+@media screen and (min-width: 750px){
+    .mob-social-media{
+        display: none;
+    }
+    body{
+        background: $tertiary-color;
+    }
+    .headerinfo{
+        height: 100vh;
+        width: 320px;
+        // display: relative;
+        display: flex;
+        flex-wrap: wrap;
+        float: left; // THIS WAS WHAT MADE IT WORK
+        // flex-direction: column;
+    }
+    
+    
+    #profpic{
+        width: 250px;
+        margin: 6px;
+    }
+    .nav{
+        width: calc(100% - 320px);
+        border: solid 3px black;
+    }
+    .body-content{
+        width: calc(100% - 320px);
+    }
+    .social-media{
+        padding-top: 50px;
+    }
+    h1{
+        padding-top: 30px;
+    }
+    .role{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    bottom: 0px;
+    h2{
+        margin: 2px;
+    }
+}
+#Role{
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 0.1em;
+}
+#contact-details{
+    font-size: 16px;
+    margin: 0px;
+}
+
+.floatr{
+    float: right;
+    
+}
+.calculated-width {
+    width: -webkit-calc(100% - 100px);
+    width:    -moz-calc(100% - 100px);
+    width:         calc(100% - 100px);
+}​
+.footerinfo{
+    
+}
+.body-content{
+    @include header-footer();
+    // align-items: center;
+    float: right;
+    padding: 10vw;
+    background-color: $tertiary-color;
+    // max-width: 300px;
+//     img{
+//         width: 250px;
+//     }
+//     heading{
+//         color: $primary-color;
+//         text-align: center;
+//     }
+}
+
+// footer{
+//     @include header-footer();
+// }
+
+// @media screen and (min-width: 600px){
+//     header{
+//         display: flex;
+//         flex-direction: row;
+//         text-align: center;
+//         .profile-name{
+//             //padding: 5px;
+//             display: flex;
+//             flex-direction: row;
+//             //padding-left: 15%;
+//             font-size: 50px;
+            
+//         }
+//     }
+
+//     .main-content{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//     }
+//     .training-option{
+//         img{
+//             width: 350px;
+//             height: 350px;
+//         }
+//     }
+//     footer{
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+
+//     }
+//     .social-media{
+//         img{
+//             margin-right: 20px;
+//             width: 10px;
+//         }
+//     }
+//     .contact-info{
+//         //width: 60%;
+//         display: flex;
+//         align-items: flex-end;
+//     }
+// }
