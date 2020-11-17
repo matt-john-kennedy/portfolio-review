@@ -1,3 +1,15 @@
+commit 6da916075a86f149ebfbc386ecfd5e8ae76be879
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Sun Nov 15 22:32:44 2020 +1000
+
+    updated notes to css w  stylesheet
+
+commit f5080396b7f044ea870b3e20f5134d0f5a8eb57e
+Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
+Date:   Sun Nov 15 22:21:53 2020 +1000
+
+    updated index and experience
+
 commit e215511adc1e4dae5fd78521b1b24ffe9d702119
 Author: matt-john-kennedy <matt.john.kennedy@gmail.com>
 Date:   Sun Nov 15 16:28:28 2020 +1000

@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90604b8a-4f15-490f-a4c5-4342c1e915c0/deploy-status)](https://app.netlify.com/sites/brave-curie-ffa72d/deploys)
+
 # A link (URL) to your published portfolio website ****
 https://brave-curie-ffa72d.netlify.app
 
